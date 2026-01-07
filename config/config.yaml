@@ -1,0 +1,26 @@
+# CladBot Configuration
+
+# Claude AI Settings
+claude_model: "claude-3-5-sonnet-20241022"
+
+# Trading Parameters
+max_position_size_sol: 0.5  # Maximum SOL per trade
+max_open_positions: 5
+dry_run: true  # Set to false for live trading
+
+# Risk Management
+max_risk_per_trade: 0.02  # 2% of portfolio
+stop_loss_percent: 10  # 10% stop loss
+take_profit_percent: 30  # 30% take profit
+
+# Monitoring
+check_interval_seconds: 15
+min_liquidity_usd: 5000
+min_holder_count: 50
+
+# Filters
+max_token_age_minutes: 60  # Only trade tokens < 1 hour old
+min_market_cap_usd: 10000
+
+# API Endpoints
+pumpfun_api_url: "https://api.pump.fun"
